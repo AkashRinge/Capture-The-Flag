@@ -1,0 +1,13 @@
+<!DOCTYPE>
+<html>
+    <head>
+        <title>28°23'46''N</title>
+        <link rel="stylesheet" href="../css/style.css">
+    </head>
+    <body>
+        <img id = "image" src="level19.png" />
+        
+        <!-- What/who does the water look like-->
+    
+    </body>
+</html>

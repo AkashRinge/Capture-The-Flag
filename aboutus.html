@@ -1,10 +1,315 @@
 <!DOCTYPE>
-<html>
+<html lang="en" style="height: auto">
     <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>About us</title>
-        <link rel="stylesheet" href="css/style.css">
-    </head>
+        <link type="text/css" href="css/style.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Averia+Gruesa+Libre" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet"> 
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+        </head>
+    <style>
+        .navbar
+        {
+            background: -moz-radial-gradient(#030F11, #033141);
+            color: white;
+            text-align: center;
+            border-color: #033141;
+            margin-bottom: 0;
+        }
+        #logo
+        {
+            float: left;
+            height: 15%;
+            width: auto;
+        }
+        p
+        {
+            font-family: 'Averia Gruesa Libre', cursive;
+            color: white;
+        }
+        #mistpara
+        {
+            color: white;
+            font-family: 'Averia Gruesa Libre', cursive;
+            font-size: 20px;
+            
+        }
+        div blockquote div div small
+        {
+            font-weight: 600;
+            color: darkgrey;
+            font-family: 'Averia Gruesa Libre', cursive;
+        }
+        h1
+        {
+            font-family: 'Open Sans Condensed', sans-serif;
+            font-size: 50px;
+            text-align: center;
+            color: darkgrey;
+        }
+        #mainwebsite
+        {
+            text-decoration: none;
+            border: 0 none;
+            display: block;
+            height: 54px;
+            width: 200px;
+            background: black;
+            border: solid rgba(175, 175, 175, 0.8);
+            border-width: 5px; 
+            color: white;
+            text-align: center;
+            border-radius: 3px;
+            font: 12px/54px "raleway-heavy", sans-serif;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            -moz-transition: all 0.3s ease-in-out;
+            -o-transition: all 0.3s ease-in-out;
+            -webkit-transition: all 0.3s ease-in-out;
+            -ms-transition: all 0.3s ease-in-out;
+            transition: all 0.3s ease-in-out;
+        }
+ 
+        #mainwebsite:hover
+        {
+            background: darkgrey;
+            color: black;
+        }
+        /* Carousel */
+
+        #quote-carousel {
+            padding: 0 10px 30px 10px;
+            margin-top: 30px;
+            /* Control buttons  */
+            /* Previous button  */
+            /* Next button  */
+            /* Changes the position of the indicators */
+            /* Changes the color of the indicators */
+        }
+        #quote-carousel .carousel-control {
+            background: none;
+            color: #CACACA;
+            font-size: 2.3em;
+            text-shadow: none;
+            margin-top: 30px;
+        }
+        #quote-carousel .carousel-control.left {
+            left: -60px;
+        }
+        #quote-carousel .carousel-control.right {
+            right: -60px;
+        }
+        #quote-carousel .carousel-indicators {
+            right: 50%;
+            top: auto;
+            bottom: 0px;
+            margin-right: -19px;
+        }
+        #quote-carousel .carousel-indicators li {
+            width: 50px;
+            height: 50px;
+            margin: 5px;
+            cursor: pointer;
+            border: 4px solid #CCC;
+            border-radius: 50px;
+            opacity: 0.4;
+            overflow: hidden;
+            transition: all 0.4s;
+        }
+        #quote-carousel .carousel-indicators .active {
+            background: #333333;
+            width: 128px;
+            height: 128px;
+            border-radius: 100px;
+            border-color: #f33;
+            opacity: 1;
+            overflow: hidden;
+        }
+        .carousel-inner {
+            min-height: 300px;
+        }
+        .item blockquote {
+            border-left: none;
+            margin: 0;
+        }
+        .item blockquote p:before {
+            content: "\f10d";
+            font-family: 'Fontawesome';
+            float: left;
+            margin-right: 10px;
+        }
+        .testimonials
+        {
+            overflow-x: hidden;
+            background: transparent url("images/blackpearl.jpeg");
+        }
+    </style>
     <body>
+            <nav class="navbar navbar-default">
+                <div class="container-fluid">
+                    <a href="index2.html"><img id="logo" src="images/logo.gif" /></a>
+                <h1 style="font-family: 'Ubuntu', sans-serif; font-weight: bold; color: white">Who are we?</h1>   </div>
+            </nav>
+         <section class="testimonials">
+            <div class="container outer">
+                <div class="row">
+                                    <div class="col-md-12" data-wow-delay="0.2s">
+                                        <div class="carousel slide" data-ride="carousel" id="quote-carousel">
+                                            <!-- Bottom Carousel Indicators -->
+                                            <ol class="carousel-indicators">
+                                                <li data-target="#quote-carousel" data-slide-to="0" class="active"><img class="img-responsive " src="images/anuraagbaishya.jpg" alt="">
+                                                </li>
+                                                <li data-target="#quote-carousel" data-slide-to="1"><img class="img-responsive" src="images/yashkumarlal.png" alt="">
+                                                </li>
+                                                <li data-target="#quote-carousel" data-slide-to="2"><img class="img-responsive" src="images/karandhodi.jpg" alt="">
+                                                </li>
+                                                 <li data-target="#quote-carousel" data-slide-to="3"><img class="img-responsive" src="images/niharmaheshwari.jpg" alt="">
+                                                </li>
+                                                <li data-target="#quote-carousel" data-slide-to="4"><img class="img-responsive" src="images/ujjwalarora.jpg" alt="">
+                                                </li>
+                                                <li data-target="#quote-carousel" data-slide-to="5"><img class="img-responsive" src="images/aakashbhattacharya.jpg" alt="">
+                                                </li>
+                                                <li data-target="#quote-carousel" data-slide-to="6"><img class="img-responsive" src="images/AkashRingeWritesHimselfInThirdPerson.jpg" alt="">
+                                                </li>
+                                            </ol>
+
+                                            <!-- Carousel Slides / Quotes -->
+                                            <div class="carousel-inner text-center">
+
+                                                <!-- Quote 1 -->
+                                                <div class="item active">
+                                                    <blockquote>
+                                                        <div class="row">
+                                                            <div class="col-sm-8 col-sm-offset-2">
+
+                                                                <p>Meet the president and founder of MIST and probably the best android developer of his batch. He's not just an ideal college student but a wonderful person too. Brilliantly plans his time and work & does whatever it takes to achieve his goals. Manages to celebrate & cherish life; and maintain a 9 point GPA at the same time. Loves to write, party, work-out and score straight As in all his exams.</p>
+                                                                <small>Anuraag Baishya</small>
+                                                            </div>
+                                                        </div>
+                                                    </blockquote>
+                                                </div>
+                                                <!-- Quote 2 -->
+                                                <div class="item">
+                                                    <blockquote>
+                                                        <div class="row">
+                                                            <div class="col-sm-8 col-sm-offset-2">
+
+                                                                <p>Similar to the president, the vice-president too is an ideal college student and maintains a fantastic balance between chilling in life and his work. His passions beseech a plethora of aspects varying from religiously following Manchester United to IOS app-development and machine learning.</p>
+                                                                <small>Yash Kumar Lal</small>
+                                                            </div>
+                                                        </div>
+                                                    </blockquote>
+                                                </div>
+                                                  <!-- Quote 3 -->
+                                                <div class="item">
+                                                    <blockquote>
+                                                        <div class="row">
+                                                            <div class="col-sm-8 col-sm-offset-2">
+
+                                                                <p>Immensely fascinated by the unexplored world of information technology, the secretary loves to learn & implement things while he works his way to becoming a 'White Hat'. As he aces his exams, with great ease, the 'to be' ethical hacker is already doing brilliant in his efforts to make a significant contribution to the world of cyber security</p>
+                                                                <small>Karan Dhodi</small>
+                                                            </div>
+                                                        </div>
+                                                    </blockquote>
+                                                </div>
+                                                 <!-- Quote 4 -->
+                                                <div class="item">
+                                                    <blockquote>
+                                                        <div class="row">
+                                                            <div class="col-sm-8 col-sm-offset-2">
+
+                                                                <p>The treasurer of MIST is the best scripting member we got on board. He is a bit of an introvert but amazing person once you get to know him. Extravagant lover of coding, C++ and R being his two favourite languages. Also loves to play table tennis and run marathons while geniously managing his academics</p>
+                                                                <small>Nihar Maheshwari</small>
+                                                            </div>
+                                                        </div>
+                                                    </blockquote>
+                                                </div>
+                                                
+                                                 <!-- Quote 5 -->
+                                                <div class="item">
+                                                    <blockquote>
+                                                        <div class="row">
+                                                            <div class="col-sm-8 col-sm-offset-2">
+
+                                                                <p>The Cryptography Tech head of MIST is a huge fan of manga, star wars and anime. Do not go on his nerdy, geeky, dorky looks; he has a sensational sense of humour and probably an IQ of a genius. Feeling depressed and need someone to make you laugh? Go to him. Having doubts regarding encryption/decryption/hashing? Go to him.</p>
+                                                                <small>Ujjwal Arora</small>
+                                                            </div>
+                                                        </div>
+                                                    </blockquote>
+                                                </div>
+                                                
+                                                
+                                                 <!-- Quote 6 -->
+                                                <div class="item">
+                                                    <blockquote>
+                                                        <div class="row">
+                                                            <div class="col-sm-8 col-sm-offset-2">
+
+                                                                <p>The Networking Tech Head is a bit shy and introvert. However he has the best grasp over basic computer science concepts including algorithms, networking, databases in the whole team. Voracious C++ coder, possesses exorbitant theoritical knowledge of the core-subjects. Also a die-hard admirer of Dan Bilzerian. 
+                                                                </p>
+                                                                <small>Aakash Bhattacharya</small>
+                                                            </div>
+                                                        </div>
+                                                    </blockquote>
+                                                </div>
+                                                <!-- Quote 7 -->
+                                                <div class="item">
+                                                    <blockquote>
+                                                        <div class="row">
+                                                            <div class="col-sm-8 col-sm-offset-2">
+
+                                                                <p>The PR head of MIST, likes to take too much onto his plate than he can possibly handle in hundred lifetimes. Avid lover of music; composes, sings and plays various instruments. Loves to write and loves to participate in MUNs. Jack of all trades, too indecisive to master any! And one more thing - hes the guy who created SMOKED!</p>
+                                                                <small>LoL LoL</small>
+                                                                
+                                                                <!-- Every single ounce of this website; from writing the information of each and every person on the board, to coming up with the creative levels of the game, done by one single genius... But what is his name? --> 
+                                                                
+                                                            </div>
+                                                        </div>
+                                                    </blockquote>
+                                                </div>
+                                            </div>
+
+                                            <!-- Carousel Buttons Next/Prev -->
+                                            <a data-slide="prev" href="#quote-carousel" class="left carousel-control"><i class="fa fa-chevron-left"></i></a>
+                                            <a data-slide="next" href="#quote-carousel" class="right carousel-control"><i class="fa fa-chevron-right"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+            </section>
+            <section class="mist">
+                <div class="container">
+                    <div class="row">
+                            <div class="col-sm-4" style="margin-left: -5%; margin-top:2%">
+                                <img src="images/logo.png" />
+                            </div>
+                            <div class="col-sm-1"></div>
+                            <div class="col-sm-7">
+                                <h1><br>MIST</h1>
+                                <p id="mistpara">
+                                is a team of ardent IT enthusiasts who tenaciously look for an opportunity to learn new things pertaining to how stuff works in the world of computers; and bestow this knowledge upon those interested. 
+                                </p>
+                                <br>
+                                <div style="margin-left: 17%">
+                                    <a href="aboutus.html" id="mainwebsite">
+                                        Read more
+                                    </a>
+                                    <br><br>
+                                </div>
+                            </div>
+                        </div>    
+                    </div>
+            </section>
+             <footer class="footer">
+              <div class="container">
+                <p>Powered by MIST.</p>
+              </div>
+            </footer>
         
     </body>
 </html>

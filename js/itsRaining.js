@@ -27,7 +27,7 @@ function fadeInImage()
 
 function moveToCorner()
 {
-    $("#logo").animate({height: "80px", width: "auto", right: "+=700", bottom: "+=500"},'slow','linear');
+    $("#logo").animate({height: "80px", width: "auto", right: "+=700", bottom: "+=350"},'slow','linear');
 }
 
 $("#logo").hide();
