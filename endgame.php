@@ -1,7 +1,7 @@
 <?php
 	$dsn = "mysql:host=localhost;dbname=smoked";
     try{
-        $db = new PDO($dsn, "root", "password");                
+        $db = new PDO($dsn, "root", "root");                
         // $db = new PDO($dsn, "root", "");              
     }
     catch(Exception $e){

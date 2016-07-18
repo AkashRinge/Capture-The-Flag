@@ -11,7 +11,7 @@
     } 
      
 ?>
-Hello <?php echo $_SESSION['user']['username']?><br /> 
+Hello <?php echo htmlentities($_SESSION['user']['username'], ENT_QUOTES, 'UTF-8'); ?>, secret content!<br /> 
 <html>
     <head>
         <title> The real homepage</title>
