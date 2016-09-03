@@ -1,28 +1,87 @@
-<!DOCTYPE>
 <html>
-<head>
-    <title>Rules and Hints</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Averia+Gruesa+Libre" rel="stylesheet">
-    <link href='https://fonts.googleapis.com/css?family=Raleway:400,200' rel='stylesheet' type='text/css'>
-    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
-</head>
-    <body style="text-align: center;">
-        <h1 style="font-family:  'Raleway', sans-serif; color: white; padding-top: 30px">
-                    Rules And Hints
-            <br><br>
-        </h1>
-        <h5 style="font-family: 'Ubuntu', cursive; width:80%; color: white; margin: auto">
-            <ol>
-                <li>Guess what? There are no rules to how this game has to be played</li><br><br>
-                <li> The only objective is to reach the next level</li><br><br>
-                <li>Try finding hints all throughout the webpage, try manipulating the webpage link and all sorts of experiments possible with the webpage to obtain hints.</li><br><br>
-                <li>When you manipulate links, use ONLY AND ONLY small case alphabets. You will know for certain when you crack a solution.</li><br><br>
-                <li>You might need to use the internet for some levels. Mostly a google search bar will be provided for such levels. For the rest others, it is possible to crack the solution without the help of the internet too</li><br><br>
-                <li>Keep saving the web links (to a word file or something) to each level. They are necessary not only for the coming levels, but also for us to declare the winner.</li><br><br>
-                <li>You have to provide the link to the final level you managed to crack along with your other details if you wish to update your progress. None of your details will be saved, unless you manually save your progress yourself.</li><br><br>
-                <li>Please do not disclose links to others, it spoils the spirit of the game. If you really appreciate our efforts, help us by only helping yourself. Bragging about cracking levels does not make any sense</li>
-            </ol>
-        </h5>
-    </body>
-</html>
+	<head>
+		<title>Rules And Hints </title>
+		<meta name="theme-color" content="#ffffff">
+		<meta content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes" name="viewport">
+		<link rel="stylesheet" href="css/tidy.css">
+		<link rel="stylesheet" href="css/animate.css">
+		<script src="js/jquery.min.js"></script>
+		<script src="js/ScrollToPlugin.min.js"></script>
+	
+	</head>
+	<body>
+	
+		<div class="container" style="width: 100%; color: white ">
+			<!-- COVER IMAGE AND FLOATING BUTTON -->
+			<div class="cover-image"></div>	
+			
+			<div class="wow fadeInUp content-card">
+				<a href="YOUR_APP_URL_HERE">
+					<paper-fab class="mobile-fab" icon="shop"></paper-fab>
+				</a>
+				
+				<div class="icon-and-title-flex">
+					<img src="images/check_mark.png" class="appicon"></img>
+					<div class="title-container">
+						<!-- REPLACE WITH YOUR APP NAME -->
+						<span class="text-title">General Rules and Hints</span>
+						<br><div class="intertext-padding"></div>
+					</div>	
+				</div><br><br>
+				<div > 
+                <div >   
+                    <ul >
+                        <li >Guess what? There are no rules to how this game has to be played</li><br><br>
+                        <li > The only objective is to reach the next level</li><br><br>
+                        <li >Try finding hints all throughout the webpage, try manipulating the webpage link and all sorts of experiments possible with the webpage to obtain hints.</li><br><br>
+                        <li >When you manipulate links, use ONLY AND ONLY small case alphabets. You will know for certain when you crack a solution.</li><br><br>
+                        <li >You might need to use the internet for some levels. Mostly a google search bar will be provided for such levels. For the rest others, it is possible to crack the solution without the help of the internet too</li><br><br>
+                        <li >Keep saving the web links (to a word file or something) to each level. They are necessary not only for the coming levels, but also for us to declare the winner.</li><br><br>
+                        <li >You have to provide the link to the final level you managed to crack along with your other details if you wish to update your progress. None of your details will be saved, unless you manually save your progress yourself.</li><br><br>
+                        <li >Please do not disclose links to others, it spoils the spirit of the game. If you really appreciate our efforts, help us by only helping yourself. Bragging about cracking levels does not make any sense</li>
+                    </ul>
+                </div>
+            </div>	
+			</div>
+			
+			
+			
+			<!--  -->
+			
+			
+			
+			
+		<!-- ===================================================================================================== -->
+			
+		<!-- JAVASCRIPT -->
+		
+		<!-- Animations -->
+		<script src="js/wow.min.js"></script>
+		<script>
+			new WOW().init();
+		</script>
+		
+		<!-- Scrollwheel Smoothing -->
+		<script>
+			$(function()
+			{	
+				var $window = $(window);
+				var scrollTime = 0.2;
+				var scrollDistance = 270;
+				$window.on("mousewheel DOMMouseScroll", function(event)
+				{
+	
+					event.preventDefault();	
+					var delta = event.originalEvent.wheelDelta/120 || -event.originalEvent.detail/3;
+					var scrollTop = $window.scrollTop();
+					var finalScroll = scrollTop - parseInt(delta*scrollDistance);
+					TweenMax.to($window, scrollTime, 
+					{
+						scrollTo : { y: finalScroll, autoKill:true }, ease: Power1.easeOut, overwrite: 5	 
+						
+					});
+				});
+			});
+		</script>
+	</body>
+</html>	
