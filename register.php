@@ -187,8 +187,16 @@
 h1{
     padding-left: 100px;
 }
+#logo
+{
+    float: left;
+    height: 15%;
+    width: auto;
+}
 </style>
-    <body>    
+    <body>
+			<a href="login.php" class="brand-logo"><img id="logo" src="images/logo.gif" /></a>
+
         <div class = "container" >
             <div class = "sign-in">
                 <h1 >Register</h1> 
@@ -207,9 +215,7 @@ h1{
 
                 </form>
             </div>
-            <a style="padding-left:102px" href="login.php">
-                <button id="btnSignIn" class="waves-effect waves-light btn">login</button>
-            </a>
+            
         </div>
     </body>
 </html> 

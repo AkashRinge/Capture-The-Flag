@@ -95,7 +95,7 @@
         else 
         { 
             // Tell the user they failed 
-            print("Login Failed."); 
+            print("Login Failed. Please retry entering correct credentials again, or register as a new user"); 
              
             // Show them their username again so all they have to do is enter a new 
             // password.  The use of htmlentities prevents XSS attacks.  You should 
