@@ -1,8 +1,10 @@
 <?php 
 
+    var_dump($_SESSION['user']);
+    //die();
     require("common.php"); 
      
-    if(empty($_SESSION['user'])) 
+    if($_SESSION['user']==NULL) 
     { 
 
         header("Location: login.php"); 

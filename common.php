@@ -2,7 +2,7 @@
 
     
     $username = "root"; 
-    $password = "mh02au368"; 
+    $password = "Iloveinstagram7"; 
     $host = "localhost"; 
     $dbname = "smoked"; 
 
