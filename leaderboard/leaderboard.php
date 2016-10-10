@@ -79,22 +79,22 @@
       <li>
         <span class="list_num">7</span>
         
-        <h2><?php echo $username[0] ?></h2>
+        <h2><?php echo $username[6] ?></h2>
       </li>
       <li>
         <span class="list_num">8</span>
         
-        <h2><?php echo $username[0] ?></h2>
+        <h2><?php echo $username[7] ?></h2>
       </li>
       <li>
         <span class="list_num">9</span>
         
-        <h2><?php echo $username[0] ?></span</h2>
+        <h2><?php echo $username[8] ?></span</h2>
       </li>
       <li>
         <span class="list_num">10</span>
         
-        <h2><?php echo $username[0] ?></h2>
+        <h2><?php echo $username[9] ?></h2>
       </li>
     </ul>
   </div>
