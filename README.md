@@ -1,5 +1,9 @@
 # Smoked
 
-Save the folder to you apache server path
+Save the files in the root apache server path
 
-type in localhost/FolderName in your browser to look at it
+Type in localhost in your browser to look at it
+
+Necessary to place files in the root directory
+
+WIP
