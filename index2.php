@@ -3,6 +3,7 @@
     //var_dump($_SESSION['user']);
     //die();
     require("common.php"); 
+    require("redirect.php");
      
     if($_SESSION['user']==NULL) 
     { 
@@ -11,6 +12,42 @@
 
         die("Redirecting to login.php"); 
     } 
+
+    $query = " 
+            SELECT 
+                regno,
+                level 
+            FROM data 
+            WHERE 
+                username = :username 
+        "; 
+         
+        // The parameter values 
+        $query_params = array( 
+            ':username' => $_SESSION['user']['username'] 
+        ); 
+         
+        try 
+        { 
+            // Execute the query against the database 
+            $stmt = $db->prepare($query); 
+            $result = $stmt->execute($query_params); 
+        } 
+        catch(PDOException $ex) 
+        { 
+            // Note: On a production website, you should not output $ex->getMessage(). 
+            // It may provide an attacker with helpful information about your code.  
+            die("Failed to run query: " ); 
+        }
+
+        
+        $level_preload = $stmt->fetch();
+        echo "\n\n\n\n\n";
+        echo $level_preload['level'];
+        $redirect_url = getLevelUrl($level_preload['level']);
+        echo $redirect_url;
+
+
      
 ?>
 <br>Hello <?php echo $_SESSION['user']['username']?></br> 
@@ -114,7 +151,7 @@
 	            </div>
 	        </div>
 	        
-	        <a href="level1/level1.php" id="starter"><div class="start"></div></a>
+	        <a href=<?php echo $redirect_url?> id="starter"><div class="start"></div></a>
 	    
 	    </div>
 
