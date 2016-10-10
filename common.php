@@ -2,7 +2,7 @@
     
     //Change the below username and password according to your mysql settings
     $username = "root"; 
-    $password = "root"; 
+    $password = "Iloveinstagram7"; 
     $host = "localhost"; 
     $dbname = "smoked"; 
 

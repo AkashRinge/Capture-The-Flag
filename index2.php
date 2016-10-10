@@ -144,7 +144,7 @@
 	                <a href = "rules.html">Rules/Hints</a>
 	            </div>
 	            <div class="block">
-	                 <a href="endgame.php">Update progress</a>
+	                 <a href="../leaderboard/leaderboard.php">Leaderboard</a>
 	            </div>
 	            <div class="block">
 	                 <a href="logout.php">Logout</a>
