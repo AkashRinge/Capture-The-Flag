@@ -74,7 +74,6 @@
         }
         elseif( ($level - $level_preload['level'] == 1) ) 
         {
-            echo "bc";
             $query2 = " 
             UPDATE
                 data 

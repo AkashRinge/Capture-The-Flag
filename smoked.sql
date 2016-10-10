@@ -47,6 +47,7 @@ CREATE TABLE IF NOT EXISTS `data` (
   `email` text NOT NULL,
   `phone` text NOT NULL,
   `level` int(11) NULL,
+  `college` varchar(255),
   PRIMARY KEY (`username`),
   UNIQUE KEY `regno`(`regno`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
