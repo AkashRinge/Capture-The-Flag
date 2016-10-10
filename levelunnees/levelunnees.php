@@ -1,17 +1,21 @@
 <!DOCTYPE>
+<?php include( $_SERVER['DOCUMENT_ROOT'] . '/savegame.php' ); ?>
 <html>
     <head>
-        <title>You dont really see all of the source-code</title>
+	<meta charset="utf-8">
+        <title>28°23'46''N</title>
         <link rel="stylesheet" href="../css/style.css">
     </head>
     <body>
-        <center><img id = "image" style="width: 800px; margin-left:100px" src="level14.png" /></center>
+        <img id = "image" src="level19.png" />
+        <br><h1 style="color: white; text-align: center">19</h1>
         
-        <!--One of the movies they were together in-->
         
+        <!-- What/who does the water look like-->
+    
         
-        <!--Google Search Form-->
-         <center>
+        <!--Google form-->
+        <center>
             <br><br><br><br>
         <FORM method=GET action="http://www.google.com/search" target="_BLANK">
             <TABLE>
@@ -29,6 +33,5 @@
             </TABLE>
         </FORM>
         </center>
-        
     </body>
 </html>

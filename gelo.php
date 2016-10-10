@@ -1,4 +1,5 @@
 <!DOCTYPE>
+<?php include( $_SERVER['DOCUMENT_ROOT'] . '/savegame.php' ); ?>
 <html>
     <head>
         <title>EVERYTHING HAS A LINK</title>

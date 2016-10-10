@@ -7,7 +7,7 @@ function getLevel($string)
  if(strpos($string, "/level1/level2.html")!==false) return 2;
  if(strpos($string, "/level3.html")!==false) return 3;
  if(strpos($string, "/loading.html")!==false) return 4;
- if (strpos($string, "/level5/level5.html")!==false) return 5;
+ if(strpos($string, "/level5/level5.html")!==false) return 5;
  if(strpos($string, "/levelsix/levelsix.html")!==false) return 6;  
  if(strpos($string, "/levelsix/goodriddance.html")!==false) return 7; 
  if(strpos($string, "/levelsix/devilsden.html")!==false) return 8;

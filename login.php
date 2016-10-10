@@ -183,13 +183,7 @@
 
     <a href="register.php">Register</a>
     
-<!-- A simple php command to output the current URL -->
-    
-    <?php $page = $_SERVER["REQUEST_URI"];
-    $_SESSION['page'] = $page;
-    echo "http://".$_SERVER['SERVER_NAME'].$_SESSION['page'];
-    ?>
-<!-- For saving the URL of the current level you are on -->
+
 
 </div>
 </body>

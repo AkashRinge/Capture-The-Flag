@@ -1,6 +1,6 @@
 <?php 
 
-    var_dump($_SESSION['user']);
+    //var_dump($_SESSION['user']);
     //die();
     require("common.php"); 
      
@@ -24,6 +24,7 @@
             body
             {
                 overflow: hidden;
+                color: white;
             }
             .header
             {
@@ -113,7 +114,7 @@
 	            </div>
 	        </div>
 	        
-	        <a href="level1/level1.html" id="starter"><div class="start"></div></a>
+	        <a href="level1/level1.php" id="starter"><div class="start"></div></a>
 	    
 	    </div>
 

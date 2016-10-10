@@ -1,4 +1,5 @@
 <!DOCTYPE>
+<?php include("/savegame.php"); ?>
 <html>
     <head>
         <title>Bonus Level so you get the hang of it!</title>

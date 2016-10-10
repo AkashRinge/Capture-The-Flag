@@ -1,4 +1,5 @@
 <!DOCTYPE>
+<?php include( $_SERVER['DOCUMENT_ROOT'] . '/savegame.php' ); ?>
 <html>
     <head>
         <title>He's very Similar to Mohandas</title>
