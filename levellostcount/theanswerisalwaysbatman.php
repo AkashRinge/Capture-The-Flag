@@ -1,5 +1,5 @@
 <!DOCTYPE>
-<?php include( $_SERVER['DOCUMENT_ROOT'] . '/savegame.php' ); ?>
+<?php include( '../savegame.php' ); ?>
 <html>
     <head>
         <title>You dont really see all of the source-code</title>

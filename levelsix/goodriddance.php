@@ -1,12 +1,12 @@
 <!DOCTYPE>
-<?php include( $_SERVER['DOCUMENT_ROOT'] . '/savegame.php' ); ?>
+<?php include( '../savegame.php' ); ?>
 <html>
     <head>
         <title>Source Code..</title>
         <link rel="stylesheet" href="../css/style.css">
     </head>
     <body>
-        <img id = "image" src="level7.jpeg" />
+        <center><img id = "image" src="level7.jpeg" /></center>
         
         <!--- change the link to 'devilsden'
             NOTE that you will have to keep checking the source code for almost all the rest of the levels for highly significant clues. 

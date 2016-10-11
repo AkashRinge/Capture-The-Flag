@@ -1,5 +1,5 @@
 <!DOCTYPE>
-<?php include( $_SERVER['DOCUMENT_ROOT'] . '/savegame.php' ); ?>
+<?php include('../savegame.php' ); ?>
 <html>
     <head>
         <title>Who made this brilliant game?</title>
@@ -7,7 +7,7 @@
     </head>
     <body>
 
-        <center><img src="../images/facebookcoverimage.png" usemap="#myMap" /></center>
+        <center><img src="../images/facebookcoverpic.png" usemap="#myMap" /></center>
         
         <!-- The key lies in one of the 3 creator's friends' names -->
         <!-- But who's the creator?! :o -->

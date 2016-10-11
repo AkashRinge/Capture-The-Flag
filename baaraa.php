@@ -1,5 +1,5 @@
 <!DOCTYPE>
-<?php include( $_SERVER['DOCUMENT_ROOT'] . '/savegame.php' ); ?>
+<?php include( 'savegame.php' ); ?>
 <html>
     <head>
         <title>What rhymes with horse?</title>

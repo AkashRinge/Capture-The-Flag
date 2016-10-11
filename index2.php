@@ -42,15 +42,16 @@
 
         
         $level_preload = $stmt->fetch();
-        echo "\n\n\n\n\n";
-        echo $level_preload['level'];
+        //echo "\n\n\n\n\n";
+        //echo $level_preload['level'];
         $redirect_url = getLevelUrl($level_preload['level']);
-        echo $redirect_url;
+        $redirect_url = $redirect_url;
+        //echo $redirect_url;
 
 
      
 ?>
-<br>Hello <?php echo $_SESSION['user']['username']?></br> 
+<!--<br>Hello <?php //echo $_SESSION['user']['username']?></br> -->
 <html>
     <head>
         <title> The real homepage</title>
@@ -144,14 +145,14 @@
 	                <a href = "rules.html">Rules/Hints</a>
 	            </div>
 	            <div class="block">
-	                 <a href="../leaderboard/leaderboard.php">Leaderboard</a>
+	                 <a href="leaderboard/leaderboard.php">Leaderboard</a>
 	            </div>
 	            <div class="block">
 	                 <a href="logout.php">Logout</a>
 	            </div>
 	        </div>
 	        
-	        <a href=<?php echo $redirect_url?> id="starter"><div class="start"></div></a>
+	        <a href="<?php echo $redirect_url?>" id="starter"><div class="start"></div></a>
 	    
 	    </div>
 

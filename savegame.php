@@ -12,18 +12,18 @@
     $page = $_SERVER["REQUEST_URI"];
     $_SESSION['page'] = $page;
     $current_url =  "  ".$_SESSION['page'];
-    echo $current_url;
+    //echo $current_url;
 
     $check_flag = false;
-    echo "\n\n\n\n";
+    //echo "\n\n\n\n";
     $level = getLevel($current_url);
-    echo $level;
+    //echo $level;
 
 
     if($_SESSION['user']==NULL) 
     { 
 
-        header("Location: login.php"); 
+        header("Location: /Smoked/login.php"); 
 
         die("Redirecting to login.php"); 
     }
@@ -61,8 +61,8 @@
 
         
         $level_preload = $stmt->fetch();
-        echo "\n\n\n\n\n";
-       	echo $level_preload['level'];
+      //  echo "\n\n\n\n\n";
+      //  echo $level_preload['level'];
         $random_flag = true;
 
        	if ($level <= $level_preload['level']) {

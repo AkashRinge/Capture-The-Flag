@@ -1,4 +1,5 @@
 <!DOCTYPE>
+<?php include( '../savegame.php' ); ?>
 <html>
     <head>
         <title>CONGRATULATIONS!</title>
@@ -50,7 +51,7 @@
     </head>
     <body>
            <div class="block">
-                <a href="../endgame.php">End Game</a>
+                <a href="../index2.php">End Game</a>
             </div>
                     <script type="text/javascript" src="../js/fireworks.js"></script>
             <h1><center>

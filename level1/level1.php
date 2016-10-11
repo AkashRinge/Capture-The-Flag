@@ -2,7 +2,7 @@
 
 
 <!DOCTYPE>
-<?php include( $_SERVER['DOCUMENT_ROOT'] . '/savegame.php' ); ?>
+<?php include( '../savegame.php' ); ?>
 <html>
     <head>
         <title>Level 1</title>
@@ -17,7 +17,7 @@
     </head>
     <body>
         <div class="container">
-        	<img id = "image" src="level1.png" usemap="#Map" />
+        	<center><img id = "image" src="level1.png" usemap="#Map" /></center>
         	<map name="Map" id="Map">
                 <area shape="poly" coords="119,190,161,188,163,237,122,237" href="level2.php">
             </map>

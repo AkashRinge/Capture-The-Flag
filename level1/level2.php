@@ -1,5 +1,5 @@
 <!DOCTYPE>
-<?php include( $_SERVER['DOCUMENT_ROOT'] . '/savegame.php' ); ?>
+<?php include( '../savegame.php' ); ?>
 <html>
     <head>
         <title>Something Wrong?</title>
@@ -7,6 +7,6 @@
         
     </head>
     <body>
-        <img id = "image" src="level2.png" />
+        <center><img src="level2.png" /></center>
     </body>
 </html>

@@ -13,11 +13,9 @@
     
     
      $username = array();
-     $i = 0; 
      while($row = $stmt->fetch())
      {
-        $username[$i] = $row['username'];
-        $i++;
+        $username[] = $row['username'];
      }
     
 ?>
@@ -57,6 +55,7 @@ psssst , zooming out might help
     
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
     <style >
       body {
         color: black;
@@ -73,62 +72,51 @@ psssst , zooming out might help
     <div class="table">
     <div class="table-cell">
     <ul class="leader">
-      <div id="decoration"></div>
+      <!--<div id="decoration"></div>
       <div id="decoration2"></div>
-      <div id="decoration3"></div>
-      <li>
-        <span class="list_num">1</span>
-        <h2><?php echo $username[2] ?></h2>
-      </li>
-      <li>
-        <span class="list_num">2</span>
-        
-        <h2><?php echo $username[1] ?></h2>
-      </li>
-      <li>
-        <span class="list_num">3</span>
-        <h2><?php echo $username[0] ?></h2>
-      </li>
-      <li>
-        <span class="list_num">4</span>
-        <h2><?php echo $username[3] ?></h2>
-      </li>
-      <li>
-        <span class="list_num">5</span>
-        <h2><?php echo $username[4] ?></h2>
-      </li>
-      <li>
-        <span class="list_num">6</span>
-        
-        <h2><?php echo $username[5] ?></h2>
-      </li>
-      <li>
-        <span class="list_num">7</span>
-        
-        <h2><?php echo $username[6] ?></h2>
-      </li>
-      <li>
-        <span class="list_num">8</span>
-        
-        <h2><?php echo $username[7] ?></h2>
-      </li>
-      <li>
-        <span class="list_num">9</span>
-        
-        <h2><?php echo $username[8] ?></span</h2>
-      </li>
-      <li>
-        <span class="list_num">10</span>
-        
-        <h2><?php echo $username[9] ?></h2>
-      </li>
+      <div id="decoration3"></div>-->
+      
+      <?php 
+			for($i=0; $i<sizeOf($username); $i++)
+			{
+				echo '<li>
+        <span class="list_num">'.($i+1).'</span>
+        <h2>';
+			echo $username[$i];
+        echo '</h2>
+      </li>';
+      }
+		?>
     </ul>
   </div>
 </div>
     <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
-<script src='http://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js'></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	<script>
+		var v;
+		$(function() {
+				$("li").hover(function()
+				{
+					var myvar = this;
+					v = setTimeout(function(){
+					$(myvar).animate({
+							backgroundColor: "#b3b3b3",
+							color: "#515151"
+						}, 300)
+					}, 150);
+				}, function()
+				{
+					clearTimeout(v);
+					$(this).animate({
+					  backgroundColor: "#fff",
+					  color: "#000"
+					}, 300);
+				});
+			});
+	</script>
 
-        <script src="js/index.js"></script>
+	<!--<script src='http://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js'></script>
+		<script src="js/index.js"></script> -->
 
     
     

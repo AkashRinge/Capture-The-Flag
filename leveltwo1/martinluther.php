@@ -1,18 +1,19 @@
 <!DOCTYPE>
-<?php include( $_SERVER['DOCUMENT_ROOT'] . '/savegame.php' ); ?>
+<?php include( '../savegame.php' ); ?>
 <html>
     <head>
         <title>singmetozzz</title>
         <link rel="stylesheet" href="../css/style.css">
     </head>
     <body>
+		<center>
         <img id = "image" src="cdefgabc.jpg" />
         <audio src="piano.mp3" autoplay loop></audio>
         
         <!--You do know you have emulators for everything these days right?-->
         
         <!--Google form-->
-        <center>
+        
             <br><br><br><br>
         <FORM method=GET action="http://www.google.com/search" target="_BLANK">
             <TABLE>

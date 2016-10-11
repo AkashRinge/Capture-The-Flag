@@ -1,12 +1,12 @@
 <!DOCTYPE>
-<?php include( $_SERVER['DOCUMENT_ROOT'] . '/savegame.php' ); ?>
+<?php include( 'savegame.php' ); ?>
 <html>
     <head>
         <title>starting letter...</title>
         <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
-        <img id = "image" src="images/level10.png" />
+        <center><img id = "image" src="images/level10.png" /></center>
         <h1 style="color: white; text-align: center"><br>10</h1>
         
         

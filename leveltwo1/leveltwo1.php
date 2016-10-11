@@ -1,12 +1,12 @@
 <!DOCTYPE>
-<?php include( $_SERVER['DOCUMENT_ROOT'] . '/savegame.php' ); ?>
+<?php include( '../savegame.php' ); ?>
 <html>
     <head>
         <title>4th?</title>
         <link rel="stylesheet" href="../css/style.css">
     </head>
     <body>
-        <img id = "image" src="leveltwo1.png" style="width: auto; height: auto; margin-left: 200px" />
+        <center><img id = "image" src="leveltwo1.png" style="width: auto; height: auto" /></center>
         
         <!-- the grapes are sour-->
         

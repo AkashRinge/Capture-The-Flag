@@ -1,5 +1,5 @@
 <!DOCTYPE>
-<?php include( $_SERVER['DOCUMENT_ROOT'] . '/savegame.php' ); ?>
+<?php include( '../savegame.php' ); ?>
 <html>
     <head>
 	<meta charset="utf-8">
@@ -7,6 +7,7 @@
         <link rel="stylesheet" href="../css/style.css">
     </head>
     <body>
+		<center>
         <img id = "image" src="level19.png" />
         <br><h1 style="color: white; text-align: center">19</h1>
         
@@ -15,7 +16,7 @@
     
         
         <!--Google form-->
-        <center>
+     
             <br><br><br><br>
         <FORM method=GET action="http://www.google.com/search" target="_BLANK">
             <TABLE>

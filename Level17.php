@@ -1,5 +1,5 @@
 <!DOCTYPE>
-<?php include( $_SERVER['DOCUMENT_ROOT'] . '/savegame.php' ); ?>
+<?php include( 'savegame.php' ); ?>
 <html>
     <head>
         <title>Select all...</title>
@@ -9,7 +9,7 @@
         <script src="js/script1.js"></script>
     </head>
     <body style="height:100%; overflow:hidden">
-        <img id = "image" src="images/level5.jpg" />
+        <center><img id = "image" src="images/level5.jpg" /></center>
         <div style="position: absolute; margin-top: 1000%"></div>
         <h1 style="text-align :center; color: white"><br>17</h1>
         

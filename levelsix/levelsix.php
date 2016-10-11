@@ -1,13 +1,14 @@
 <!DOCTYPE>
-<?php include( $_SERVER['DOCUMENT_ROOT'] . '/savegame.php' ); ?>
+<?php include( '../savegame.php' ); ?>
 <html>
     <head>
         <title>Hang it on the shelf in good health</title>
         <link rel="stylesheet" href="../css/style.css">
     </head>
     <body>
+		<center>
         <img id = "image" src="level6.jpg" />
-        <center>
+        
             <br><br><br><br>
         <FORM method=GET action="http://www.google.com/search" target="_BLANK">
             <TABLE>

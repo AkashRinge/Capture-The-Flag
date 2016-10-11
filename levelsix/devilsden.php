@@ -1,16 +1,20 @@
 <!DOCTYPE>
-<?php include( $_SERVER['DOCUMENT_ROOT'] . '/savegame.php' ); ?>
+<?php include( '../savegame.php' ); ?>
 <html>
     <head>
         <title>Where he lives 3:)</title>
         <link rel="stylesheet" href="../css/style.css">
     </head>
     <body>
-        <img id = "image" src="level8.jpeg" />
-        <div style="margin-top: -350px; margin-left: 730px" onmouseover="alert('1 out of 4')"></div>
-        <div style="margin-top: -360px; margin-left: 500px" onmouseover="alert('4 out of 4')" ></div>
-        <div style="margin-top: -293px; margin-left: 640px" onmouseover="alert('3 out of 4')"></div>
-        <div style="margin-top: -35px; margin-left: 520px" onmouseover="alert('2 out of 4')"></div>
+        <center><img id = "image" src="level8.jpeg" usemap="#myMap" /></center>
+        <map name="myMap">
+			
+        <area shape="rect" coords="329,7,381,57" onmouseover="alert('1 out of 4')">
+        <area shape="rect" coords="89,2,151,49" onmouseover="alert('4 out of 4')" >
+        <area shape="rect" coords="227,66,292,110" onmouseover="alert('3 out of 4')">
+        <area shape="rect" coords="106,319,168,359" onmouseover="alert('2 out of 4')">
+        </map>
+
         <style>
             div
             {
