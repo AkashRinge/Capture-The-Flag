@@ -2,13 +2,14 @@
 <?php include( '../savegame.php' ); ?>
 <html>
     <head>
-        <title>Last level :')</title>
+        <title>Level 47</title>
         <link rel="stylesheet" href= "../css/style.css">
     </head>
     <body>
-        <center><img id = "image" src="hazypicture45.jpg" /></center>
+        <center><img id = "image" src="level__.jpg" /><br>
         
-        <!--invert -->
+		<!-- Number of dash dash in dash -->
         
     </body>
 </html>
+

@@ -27,11 +27,11 @@ SET time_zone = "+00:00";
 --
 
 CREATE TABLE IF NOT EXISTS `banned` (
-  `userid` int(11) NOT NULL,
+  `username` varchar(255) NOT NULL references users,
   `until` int(11) NOT NULL,
   `by` int(11) NOT NULL,
   `reason` varchar(255) NOT NULL,
-  UNIQUE KEY `userid` (`userid`)
+  UNIQUE KEY `username` (`username`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------

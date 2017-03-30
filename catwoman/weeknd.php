@@ -9,8 +9,7 @@
     <body>
         <center><img id = "image" src="../images/leveltwuntyseven.jpg" /></center>
         
-        <!-- °C=°F -->
-        <!-- Always rememeber smallcase alphabets only -->
+        <!-- F=C -->
         
     </body>
 </html>

@@ -26,11 +26,14 @@ function getLevel($string)
  if(strpos($string, "/leveltwo1/leveltwo1.php")!==false) return 21;
  if(strpos($string, "/leveltwo1/fox.php")!==false) return 22;
  if(strpos($string, "/leveltwo1/martinluther.php")!==false) return 23;  
+ if(strpos($string, "/LeVeLtwentYfOuR")!==false) return 24;
  if(strpos($string, "/LeVeLtwentYfOuR/")!==false) return 24;
+ if(strpos($string, "/hello")!==false) return 25;
  if(strpos($string, "/hello/")!==false) return 25;
  if(strpos($string, "/catwoman/ridiculouslyeasylevel.php")!==false) return 26;
  if(strpos($string, "/catwoman/weeknd.php")!==false) return 27;
  if(strpos($string, "/catwoman/minusforty.php")!==false) return 28; 
+ if(strpos($string, "/tventy9")!==false) return 29;
  if(strpos($string, "/tventy9/")!==false) return 29;
  if(strpos($string, "/leveL3o.php")!==false) return 30; 
  if(strpos($string, "/troisuno/level31.php")!==false) return 31;  
@@ -43,12 +46,20 @@ function getLevel($string)
  if(strpos($string, "/hashtaglevel38/level38.php")!==false) return 38;
  if(strpos($string, "/hashtaglevel38/pi.php")!==false) return 39;
  if(strpos($string, "/hashtaglevel38/hithere.php")!==false) return 40;
+ if(strpos($string, "/levellostcount/newfolder")!==false) return 41;
  if(strpos($string, "/levellostcount/newfolder/")!==false) return 41;
  if(strpos($string, "/levellostcount/surname.php")!==false) return 42;
  if(strpos($string, "/lastfolderofthegame/level43.php")!==false) return 43;  
  if(strpos($string, "/lastfolderofthegame/agentsmith.php")!==false) return 44;
  if(strpos($string, "/lastfolderofthegame/unleadedfuel.php")!==false) return 45;
  if(strpos($string, "/lastfolderofthegame/mist.php")!==false)return 46;
+ if(strpos($string, "/lolJK/level47.php")!==false)return 47;
+ if(strpos($string, "/lolJK/fourthousandfivehundred.php")!==false)return 48;
+ if(strpos($string, "/lolJK/anagram.php")!==false)return 49;
+ if(strpos($string, "/halfcentury/nextLevel.php")!==false)return 50;
+ if(strpos($string, "/halfcentury/levL51.php")!==false)return 51;
+
+ 
  else return 0;
 }
 ?>

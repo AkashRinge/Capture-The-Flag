@@ -49,6 +49,11 @@ function getLevelUrl($level_preload)
  if($level_preload == 44) return "lastfolderofthegame/agentsmith.php";
  if($level_preload == 45) return "lastfolderofthegame/unleadedfuel.php";
  if($level_preload == 46) return "lastfolderofthegame/mist.php";
+ if($level_preload == 47) return "lolJK/level47.php";
+ if($level_preload == 48) return "lolJK/fourthousandfivehundred.php";
+ if($level_preload == 49) return "lolJK/anagram.php";
+ if($level_preload == 50) return "halfcentury/nextLevel.php";
+ if($level_preload == 51) return "halfcentury/levL51.php";
  else return 0;
 }
 ?>

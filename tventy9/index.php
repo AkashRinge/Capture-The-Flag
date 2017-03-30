@@ -6,7 +6,7 @@
         <link rel="stylesheet" href="../css/style.css">
     </head>
     <body>
-		<center><img id = "image" src="level29.png" /></center>
+		<center><img id = "image" src="../images/level29.png" /></center>
         
         <!--why is it easier to find the word you want in a dictionary-->
 		<!--append *whateveryouransweris*.php to the link-->

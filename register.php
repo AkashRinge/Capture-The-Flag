@@ -28,6 +28,13 @@
             header("Location: register.php");
             die("Invalid E-Mail Address"); 
         } 
+
+        if(strlen((string)($_POST['regno'])) <= 8 || strlen((string)($_POST['regno'])) >11 || $_POST['regno'] <0 ) 
+        { 
+            $_SESSION['error'] = "Entered Registration No. is wrong";
+            header("Location: register.php");
+            die("Please enter a password."); 
+        } 
     
         $query = " 
             SELECT 
@@ -186,7 +193,7 @@
               
             // $_SESSION['error'] = "An error occured. Please try again.";
             // header("Location: register.php");
-            echo $ex2;
+           // echo $ex2;
             die("Exception in running query");  
         } 
         

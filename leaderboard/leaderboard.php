@@ -3,7 +3,7 @@
 
      
 
-     $query = "SELECT username FROM data ORDER by level DESC LIMIT 10";
+     $query = "SELECT username FROM data WHERE username NOT IN (SELECT username FROM banned) ORDER by level DESC, tst LIMIT 10";
     
      
     

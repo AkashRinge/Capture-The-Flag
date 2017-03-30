@@ -13,7 +13,45 @@
         die("Redirecting to login.php"); 
     } 
 
-    $query = " 
+    $query2 = " 
+        SELECT 
+            * 
+        FROM banned
+        WHERE 
+            username = :username 
+    "; 
+     
+    // The parameter values 
+    $query_params2 = array( 
+        ':username' => $_SESSION['user']['username'] 
+    ); 
+     
+    try 
+    { 
+        // Execute the query against the database 
+        $stmt2 = $db->prepare($query2); 
+        $result2 = $stmt2->execute($query_params2); 
+    } 
+    catch(PDOException $ex) 
+    { 
+        // Note: On a production website, you should not output $ex->getMessage(). 
+        // It may provide an attacker with helpful information about your code.  
+        die("Failed to run query: " . $ex->getMessage()); 
+    } 
+
+    $row = $stmt2->fetch();
+    $banned_flag = false;
+    if($row)
+    {
+        echo "You have been banned for jumping levels.";
+        $banned_flag = true;
+    }
+
+    if($banned_flag == false)
+    {
+
+
+        $query = " 
             SELECT 
                 regno,
                 level 
@@ -47,7 +85,7 @@
         $redirect_url = getLevelUrl($level_preload['level']);
         $redirect_url = $redirect_url;
         //echo $redirect_url;
-
+    }
 
      
 ?>
@@ -57,7 +95,7 @@
         <title> The real homepage</title>
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="css/tidy.css">
-		<link rel="stylesheet" href="css/animate.css">
+        <link rel="stylesheet" href="css/animate.css">
         <style>
             body
             {
@@ -120,7 +158,7 @@
 
             .start:hover
             {
-            	opacity: 1.0;
+                opacity: 1.0;
             }
             #starter
             {
@@ -136,25 +174,25 @@
         </style>
     </head>
     <body>
-	    <div class = "container">
-	        <div class="header">
-	            <div class="block">
-	                <a href = "index.html">Home</a>
-	            </div>
-	            <div class="block">
-	                <a href = "rules.html">Rules/Hints</a>
-	            </div>
-	            <div class="block">
-	                 <a href="leaderboard/leaderboard.php">Leaderboard</a>
-	            </div>
-	            <div class="block">
-	                 <a href="logout.php">Logout</a>
-	            </div>
-	        </div>
-	        
-	        <a href="<?php echo $redirect_url?>" id="starter"><div class="start"></div></a>
-	    
-	    </div>
+        <div class = "container">
+            <div class="header">
+                <div class="block">
+                    <a href = "index.php">Home</a>
+                </div>
+                <div class="block">
+                    <a href = "rules.html">Rules/Hints</a>
+                </div>
+                <div class="block">
+                     <a href="leaderboard/leaderboard.php">Leaderboard</a>
+                </div>
+                <div class="block">
+                     <a href="logout.php">Logout</a>
+                </div>
+            </div>
+            
+            <a href="<?php echo $redirect_url?>" id="starter"><div class="start"></div></a>
+        
+        </div>
 
 
 
